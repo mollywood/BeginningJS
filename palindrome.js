@@ -16,10 +16,14 @@ function palindromeCheck(str) {
   var len = str.length
   for (var i = 0; i < len/2; i++) {
     if (str[i] !== str[len - 1 - i]) {
-      return false;
+      var answer="This is NOT a palindrome!"
+      document.write(answer)
+      break
+    } else {
+      var answer="This is a palindrome!"
+      document.write(answer)
     }
   }
-  return true
 }
 
 //Not sure how to print this to the html
